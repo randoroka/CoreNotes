@@ -65,15 +65,15 @@ extension Color: RawRepresentable {
     public init?(rawValue: String) {
         
         guard let data = Data(base64Encoded: rawValue) else{
-            self = .black
+            self = .white //sets default text color to white
             return
         }
         
         do{
-            let color = try NSKeyedUnarchiver.unarchiveTopLevelObjectWithData(data) as? NSColor ?? .black
+            let color = try NSKeyedUnarchiver.unarchiveTopLevelObjectWithData(data) as? NSColor ?? .white
             self = Color(color)
         }catch{
-            self = .black
+            self = .white
         }
         
     }
