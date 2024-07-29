@@ -2,7 +2,7 @@
 
 ## Description
 CoreNotes is a simple macOS application for storing notes. This project 
-is older but is still functional.
+is older but is still functional. This project was created to learn CoreData. 
 
 ## Features
 - **Authentication**: Integrated with Firebase for user authentication.
