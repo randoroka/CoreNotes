@@ -103,6 +103,7 @@ public struct Sidebar: View {
                 }
             }
         }
+        .preferredColorScheme(.dark)
     }
 
     private func addFolder(name: String, userID: String) {

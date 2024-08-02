@@ -87,7 +87,8 @@ class LoginViewModel: ObservableObject{
                 }
                 
                 if let userID = result?.user.uid {
-                   keychainManager.saveUserID(userID: userID) // maybe try deleting this to see if it actually makes a different when making accounts
+                   keychainManager.saveUserID(userID: userID)
+                    
                     self.userID = userID //
                   }
                 print(userID!)

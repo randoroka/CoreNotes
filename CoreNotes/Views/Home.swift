@@ -30,6 +30,7 @@ struct Home: View {
                 }
             Text("No note selected")
         }
+        .preferredColorScheme(.dark) 
             
     }
 }
